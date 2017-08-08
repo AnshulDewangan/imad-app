@@ -85,8 +85,9 @@ app.get('/:aricleName', function(req,res) {
     //articles[articleName] ==  {} content objectfor article one 
     var articleName = req.params.articleName;
     res.send(createTemplate(articles[articleName]));
-}
-app.get('/:article-wo',function(req,res) {
+});
+
+app.get('/:article-two',function(req, res) {
     res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
 });
  
